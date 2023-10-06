@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1001,
+    "name": "Full Wedding Planning",
+    "image": "https://i.ibb.co/cbM2rbX/planning.jpg",
+    "price": "$5,000 - $10,000",
+    "short_description": "Let us take care of every detail, from start to finish.",
+    "long_description": "Our Full Wedding Planning service ensures that you can relax and enjoy your engagement while we handle all the planning and coordination. From venue selection to floral arrangements and everything in between, we'll make your dream wedding a reality."
+  },
+  {
+    "id": 1002,
+    "name": "Venue Selection",
+    "image": "https://i.ibb.co/dKvFprq/Venue.jpg",
+    "price": "$1,500 - $3,000",
+    "short_description": "Find the perfect setting for your special day and enjoy.",
+    "long_description": "Choosing the right venue is crucial for your wedding's ambiance. Our Venue Selection service assists you in finding the ideal location that suits your style and guest count. We'll scout options, negotiate contracts, and ensure your venue sets the stage for a magical celebration."
+  },
+  {
+    "id": 1003,
+    "name": "Decor & Design",
+    "image": "https://i.ibb.co/3Cc3z1H/Decor-Design.jpg",
+    "price": "$2,000 - $5,000",
+    "short_description": "Create a visual masterpiece that reflects your love story.",
+    "long_description": "Elevate your wedding's aesthetics with our Decor & Design service. Our talented designers will work closely with you to create a visually stunning atmosphere that matches your chosen theme. From table settings to floral arrangements, every detail will be thoughtfully crafted."
+  },
+  {
+    "id": 1004,
+    "name": "Catering & Culinary",
+    "image": "https://i.ibb.co/Nyk9qTG/Catering-Culinary.jpg",
+    "price": "$3,000 - $7,000",
+    "short_description": "Delight your guests with a delectable culinary experience.",
+    "long_description": "Our Catering & Culinary service ensures that your wedding menu is a culinary journey to remember. From tasting sessions to menu planning, we'll customize the dining experience to match your preferences. Whether you desire gourmet cuisine or a family-style feast, we've got it covered."
+  },
+  {
+    "id": 1005,
+    "name": "Entertainment",
+    "image": "https://i.ibb.co/L9f20y4/Entertainment.jpg",
+    "price": "$1,500 - $4,000",
+    "short_description": "Keep the party going with top-notch entertainment.",
+    "long_description": "Make your wedding a celebration to remember with our Entertainment service. Choose from live bands, DJs, or other entertainment options to keep your guests dancing all night. We'll handle the bookings and coordination, ensuring your entertainment complements your wedding style."
+  },
+  {
+    "id": 1006,
+    "name": "Photography & Videography",
+    "image": "https://i.ibb.co/Fx1L3F0/Photography-Videography.jpg",
+    "price": "$2,500 - $6,000",
+    "short_description": "Capture every moment and emotion with stunning visuals.",
+    "long_description": "Preserve the memories of your special day with our Photography & Videography service. Our talented photographers and videographers will capture every smile, tear, and laugh, creating a beautiful narrative of your wedding. From candid moments to formal portraits, we've got it all covered."
+  }
+]
