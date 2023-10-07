@@ -8,7 +8,7 @@ const FAQ = () => {
       </h2>
       <div className='flex gap-6 flex-col lg:flex-row items-center'>
         <div className='flex-1'>
-          <img src={faq} alt="" />
+          <img src={faq} alt="" className="rounded-tl-[60px] rounded-br-[60px] md:rounded-tl-[100px] md:rounded-br-[100px] border-4 border-[#8ECDDD]" />
         </div>
         <div  className='flex-1'>
           <div className="collapse collapse-plus bg-[#bcd8df] mb-2">
