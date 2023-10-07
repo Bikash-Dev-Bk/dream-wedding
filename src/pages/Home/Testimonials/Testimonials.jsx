@@ -27,10 +27,10 @@ const Testimonials = () => {
   return (
     <div className="max-w-7xl mx-auto">
       <h2 className="text-4xl font-bold text-center">Testimonials</h2>
-      <div className="grid gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between my-20 p-5 md:p-4 lg:p-2">
+      <div className="grid gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between my-20 p-5 md:p-4 lg:p-2 ">
         {testimonials.map((testimonial) => (
           // eslint-disable-next-line react/no-unknown-property
-          <div key={testimonial.id} testimonial={testimonial} className="flex flex-col justify-center items-center card card-compact bg-base-100 shadow-xl p-4">
+          <div key={testimonial.id} testimonial={testimonial} className="flex flex-col justify-center items-center shadow-xl shadow-[#acccd4] p-6 rounded-tl-[60px] rounded-br-[60px] md:rounded-tl-[100px] md:rounded-br-[100px] border-2 border-[#8ECDDD] hover:shadow-2xl hover:shadow-[#8ECDDD]">
             <img src={testimonial.image} alt="" className="w-[150px] rounded-full border-4 border-[#8ECDDD]" />
             <h3 className="text-xl text-center font-semibold mt-5">{testimonial.name}</h3>
             <p className="text-justify mt-3">{testimonial.description}</p>

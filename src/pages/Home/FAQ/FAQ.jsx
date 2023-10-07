@@ -8,10 +8,10 @@ const FAQ = () => {
       </h2>
       <div className='flex gap-6 flex-col lg:flex-row items-center'>
         <div className='flex-1'>
-          <img src={faq} alt="" className="rounded-tl-[60px] rounded-br-[60px] md:rounded-tl-[100px] md:rounded-br-[100px] border-4 border-[#8ECDDD]" />
+          <img src={faq} alt="" className="rounded-tl-[60px] rounded-br-[60px] md:rounded-tl-[100px] md:rounded-br-[100px] border-4 border-[#8ECDDD] hover:shadow-2xl hover:shadow-[#8ECDDD]" />
         </div>
         <div  className='flex-1'>
-          <div className="collapse collapse-plus bg-[#bcd8df] mb-2">
+          <div className="collapse collapse-plus bg-[#8ECDDD] mb-2">
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-xl font-medium">
               What types of wedding services do you offer?
@@ -25,7 +25,7 @@ const FAQ = () => {
               </p>
             </div>
           </div>
-          <div className="collapse collapse-plus bg-[#bcd8df] mb-2">
+          <div className="collapse collapse-plus bg-[#8ECDDD] mb-2">
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-xl font-medium">
               How do I get started with your wedding planning services?
@@ -39,7 +39,7 @@ const FAQ = () => {
               </p>
             </div>
           </div>
-          <div className="collapse collapse-plus bg-[#bcd8df] mb-2">
+          <div className="collapse collapse-plus bg-[#8ECDDD] mb-2">
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-xl font-medium">
               Can you help with destination weddings?
@@ -52,7 +52,7 @@ const FAQ = () => {
               </p>
             </div>
           </div>
-          <div className="collapse collapse-plus bg-[#bcd8df] mb-2">
+          <div className="collapse collapse-plus bg-[#8ECDDD] mb-2">
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-xl font-medium">
               Do you provide customizable wedding packages?
@@ -65,7 +65,7 @@ const FAQ = () => {
               </p>
             </div>
           </div>
-          <div className="collapse collapse-plus bg-[#bcd8df] mb-2">
+          <div className="collapse collapse-plus bg-[#8ECDDD] mb-2">
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-xl font-medium">
               Can you help with budget management for the wedding?
