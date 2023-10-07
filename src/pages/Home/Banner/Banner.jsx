@@ -1,5 +1,6 @@
 import banner from "../../../assets/banner.jpg";
 import "./Banner.css";
+import { RiTodoLine } from 'react-icons/ri';
 
 const Banner = () => {
   return (
@@ -12,13 +13,12 @@ const Banner = () => {
         />
       </div>
       <div className="flex-1">
-        <h2 className="text-3xl md:text-6xl ">Creating Your Perfect Wedding Day!</h2>
+        <h2 className="text-3xl md:text-6xl font-bold">Creating Your Perfect Wedding Day!</h2>
         <p className="text-lg text-justify my-8">
           Crafting Unforgettable Moments: Creating Your Perfect Wedding Day!
         </p>
         <div>
-          <button className="text-white text-lg bg-[#ff8080] font-semibold px-10 py-4 rounded-[30px]  reservation_btn">
-            Make Reservation
+          <button className="flex items-center gap-2 text-white text-lg bg-[#ff8080] font-semibold px-10 py-4 rounded-[30px]  reservation_btn"> <RiTodoLine/> Make Reservation
           </button>
         </div>
       </div>

@@ -100,7 +100,7 @@ const Navbar = () => {
             </ul>
           </div>
           <img src={logo} alt="" className="max-w-[60px] cursor-pointer" />
-          <p className="text-2xl font-bold">Dream Wedding</p>
+          <p className="text-2xl font-bold cursor-pointer">Dream Wedding</p>
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
