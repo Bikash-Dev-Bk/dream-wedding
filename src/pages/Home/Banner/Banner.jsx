@@ -8,7 +8,7 @@ const Banner = () => {
         <img
           src={banner}
           alt=""
-          className="rounded-tl-[100px] rounded-br-[100px] border-4 border-[#8ECDDD]"
+          className="rounded-tl-[60px] rounded-br-[60px] md:rounded-tl-[100px] md:rounded-br-[100px] border-4 border-[#8ECDDD]"
         />
       </div>
       <div className="flex-1">
