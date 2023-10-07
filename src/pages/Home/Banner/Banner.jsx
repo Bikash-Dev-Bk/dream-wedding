@@ -3,7 +3,7 @@ import "./Banner.css";
 
 const Banner = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-12 items-center p-5 md:p-4 lg:p-2 mt-24 mb-40">
+    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-center p-5 md:p-4 lg:p-2 mt-24 mb-40">
       <div className="flex-1">
         <img
           src={banner}

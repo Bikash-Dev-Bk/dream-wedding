@@ -5,7 +5,7 @@ import Footer from "../pages/Shared/Footer/Footer";
 
 const Root = () => {
     return (
-        <div className="max-w-7xl mx-auto font-poppins">
+        <div className=" font-poppins">
             <Navbar></Navbar>
             <Outlet></Outlet> 
             <Footer></Footer>     

@@ -2,7 +2,7 @@ import faq from '../../../assets/faq.jpg'
 
 const FAQ = () => {
   return (
-    <div className="my-32 p-5 md:p-4 lg:p-2">
+    <div className="max-w-7xl mx-auto my-32 p-5 md:p-4 lg:p-2">
       <h2 className="text-4xl font-bold text-center mb-24">
         Frequently Asked Questions
       </h2>
