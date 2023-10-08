@@ -64,8 +64,8 @@ const Login = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="email"
-                className="input input-bordered"
+                placeholder="Email"
+                className="ring-1 ring-gray-300 px-4 py-3 mt-2 rounded-full outline-none focus:ring-2 focus:ring-[#8ECDDD]"
                 required
               />
             </div>
@@ -76,8 +76,8 @@ const Login = () => {
               <input
                 type="password"
                 name="password"
-                placeholder="password"
-                className="input input-bordered"
+                placeholder="Password"
+                className="ring-1 ring-gray-300 px-4 py-3 mt-2 rounded-full outline-none focus:ring-2 focus:ring-[#8ECDDD]"
                 required
               />
               <label className="label">
@@ -98,15 +98,14 @@ const Login = () => {
             )}
 
             <div className="form-control mt-6">
-              <button className="btn btn-outline border-none bg-[#ff8080] hover:bg-[#f16c6c] text-white">
+              <button className="btn rounded-full  text-white bg-[#ff8080] hover:bg-white hover:border-2 hover:border-[#f16c6c] hover:text-[#f16c6c]">
                 Login
               </button>
             </div>
             <p className="text-center font-semibold">Or</p>
             <button
               onClick={handleSignInWithGoogle}
-              className="btn btn-outline border-none bg-[#ff8080] hover:bg-[#f16c6c] text-white"
-            >
+              className="btn btn-outline rounded-full border-2 border-[#f16c6c]  hover:bg-[#ff8080] hover:text-white hover:border-none ">
               <FcGoogle className="text-2xl" />{" "}
               <span className="ml-2">Sign up with Google</span>{" "}
             </button>
