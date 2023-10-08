@@ -10,13 +10,14 @@ const ServiceDetails = () => {
   const { name, image, price, long_description } = service;
 
   return (
-    <div className="max-w-7xl mx-auto py-12">
-      <div className=" w-1/2 mx-auto bg-base-100  rounded-tl-[60px] rounded-br-[60px] md:rounded-tl-[100px] md:rounded-br-[100px] border-2 border-[#8ECDDD] p-6 hover:shadow-2xl hover:shadow-[#8ECDDD] ">
+    <div className="lg:max-w-7xl mx-auto py-12 p-5 md:p-4 lg:p-2">
+      <h2 className="text-center text-4xl font-bold mb-12">{name} Details</h2>
+      <div className=" lg:w-1/2 mx-auto bg-base-100  rounded-tl-[40px] rounded-br-[40px] md:rounded-tl-[60px] md:rounded-br-[60px] border-2 border-[#8ECDDD] p-6 hover:shadow-2xl hover:shadow-[#8ECDDD] ">
         <div>
           <img
             src={image}
             alt="service img"
-            className="rounded-tl-[60px] rounded-br-[60px] md:rounded-tl-[100px] md:rounded-br-[100px]"
+            className="rounded-tl-[40px]  md:rounded-tl-[60px]"
           />
         </div>
         <div className="mt-6">

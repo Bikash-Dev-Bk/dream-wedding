@@ -68,7 +68,7 @@ const Navbar = () => {
               <span className="mx-2 ">{user?.displayName}</span>
             <img
               src={user?.photoURL}
-              alt=""
+              alt="userPic"
               style={{ height: "40px" }}
               className="rounded-full"
             />

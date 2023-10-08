@@ -18,7 +18,7 @@ const Banner = () => {
           Crafting Unforgettable Moments: Creating Your Perfect Wedding Day!
         </p>
         <div>
-          <button className="flex items-center gap-2 text-white text-lg bg-[#ff8080] font-semibold px-10 py-4 rounded-[30px]  reservation_btn"> <RiTodoLine/> Make Reservation
+          <button className="flex items-center gap-2 text-white text-lg font-semibold  px-10 py-4 bg-[#ff8080]  rounded-[30px]  hover:bg-white hover:border-2 hover:border-[#f16c6c] hover:text-[#f16c6c]"> <RiTodoLine/> Make Reservation
           </button>
         </div>
       </div>
