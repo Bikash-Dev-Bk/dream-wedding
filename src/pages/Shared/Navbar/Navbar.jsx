@@ -1,8 +1,18 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import logo from "../../../assets/logo.png";
+import { AuthContext } from "../../../providers/AuthProvider";
+import { FaUser } from "react-icons/fa";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.error(error));
+  };
+
   const location = useLocation();
   const [activeRoute, setActiveRoute] = useState("");
 
@@ -46,28 +56,54 @@ const Navbar = () => {
           Contact
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to="/login"
-          className={`${
-            activeRoute === "/login" &&
-            "!text-[#ff8080] font-bold underline !bg-inherit"
-          }`}
-        >
-          Login
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/register"
-          className={`${
-            activeRoute === "/register" &&
-            "!text-[#ff8080] font-bold underline !bg-inherit"
-          }`}
-        >
-          Register
-        </NavLink>
-      </li>
+      {user?.uid ? (
+        <>
+        <li>
+          <NavLink className="" onClick={handleLogOut}>
+            Logout
+          </NavLink>
+        </li>
+        {user?.photoURL ? (
+          <div className="flex items-center cursor-pointer ml-3">
+              <span className="mx-2 ">{user?.displayName}</span>
+            <img
+              src={user?.photoURL}
+              alt=""
+              style={{ height: "40px" }}
+              className="rounded-full"
+            />
+            
+          </div>
+        ) : (
+          <div className="flex items-center bg-[#ff8080] p-3 rounded-full mx-6"><FaUser></FaUser></div>
+        )}
+        </>
+      ) : (
+        <>
+          <li>
+            <NavLink
+              to="/login"
+              className={`${
+                activeRoute === "/login" &&
+                "!text-[#ff8080] font-bold underline !bg-inherit"
+              }`}
+            >
+              Login
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/register"
+              className={`${
+                activeRoute === "/register" &&
+                "!text-[#ff8080] font-bold underline !bg-inherit"
+              }`}
+            >
+              Register
+            </NavLink>
+          </li>
+        </>
+      )}
     </>
   );
 
