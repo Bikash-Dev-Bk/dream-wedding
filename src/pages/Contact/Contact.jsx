@@ -23,21 +23,21 @@ const Contact = () => {
                 <input
                   type="name"
                   placeholder="Name"
-                  className="ring-1  w-full rounded-full px-4 py-2 mt-2 outline-none     "
+                  className="ring-1  w-full rounded-full px-4 py-2 mt-2 outline-none "
                 />
               </div>
               <div>
                 <input
                   type="email"
                   placeholder="Email"
-                  className="ring-1  w-full rounded-full px-4 py-2 mt-2 outline-none     "
+                  className="ring-1 ring-[#8ECDDD] w-full rounded-full px-4 py-2 mt-2 outline-none "
                 />
               </div>
               <div>
                 <input
                   type="text"
                   placeholder="Phone"
-                  className="ring-1  w-full rounded-full px-4 py-2 mt-2 outline-none     "
+                  className="ring-1 ring-[#8ECDDD] w-full rounded-full px-4 py-2 mt-2 outline-none"
                 />
               </div>
               <div>
@@ -45,7 +45,7 @@ const Contact = () => {
                   type="text"
                   placeholder="Message"
                   rows="4"
-                  className="ring-1  w-full rounded-2xl px-4 py-2 mt-2 outline-none     "
+                  className="ring-1 ring-[#8ECDDD] w-full rounded-2xl px-4 py-2 mt-2 outline-none"
                 ></textarea>
               </div>
 

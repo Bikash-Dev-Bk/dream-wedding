@@ -27,7 +27,7 @@ const Testimonials = () => {
   return (
     <div className="max-w-7xl mx-auto">
       <h2 className="text-4xl font-bold text-center">Testimonials</h2>
-      <p className="max-w-4xl mx-auto text-center text-lg my-5">Explore the heartfelt experiences of couples who trusted us with their special day. Our Testimonials section is a testament to the joy, satisfaction, and lasting memories we create. Read their stories and see how we turn dreams into reality. Your love story could be the next one we help bring to life.</p>
+      <p className="max-w-4xl mx-auto text-center text-lg my-5 p-5 md:p-4 lg:p-2">Explore the heartfelt experiences of couples who trusted us with their special day. Our Testimonials section is a testament to the joy, satisfaction, and lasting memories we create. Read their stories and see how we turn dreams into reality. Your love story could be the next one we help bring to life.</p>
       <div className="grid gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between my-20 p-5 md:p-4 lg:p-2 ">
         {testimonials.map((testimonial) => (
           // eslint-disable-next-line react/no-unknown-property

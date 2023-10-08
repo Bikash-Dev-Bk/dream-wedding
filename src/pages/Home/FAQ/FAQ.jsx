@@ -6,7 +6,7 @@ const FAQ = () => {
       <h2 className="text-4xl font-bold text-center">
         Frequently Asked Questions
       </h2>
-      <p className="max-w-4xl mx-auto text-center text-lg mt-5 mb-24">If you can't find the answers you're looking for in our FAQs, please don't hesitate to reach out to our dedicated team. We're here to assist you and ensure your wedding event is everything you've envisioned. Your satisfaction is our priority, and we're excited to be part of your special day.</p>
+      <p className="max-w-4xl mx-auto text-center text-lg mt-5 mb-24 p-5 md:p-4 lg:p-2">If you can't find the answers you're looking for in our FAQs, please don't hesitate to reach out to our dedicated team. We're here to assist you and ensure your wedding event is everything you've envisioned. Your satisfaction is our priority, and we're excited to be part of your special day.</p>
       <div className='flex gap-6 flex-col lg:flex-row items-center'>
         <div className='flex-1'>
           <img src={faq} alt="" className="rounded-tl-[60px] rounded-br-[60px] md:rounded-tl-[100px] md:rounded-br-[100px] border-4 border-[#8ECDDD] hover:shadow-2xl hover:shadow-[#8ECDDD]" />
