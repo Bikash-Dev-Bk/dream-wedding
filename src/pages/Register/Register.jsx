@@ -12,7 +12,7 @@ const Register = () => {
             Please Register Here
           </h1>
         </div>
-        <div className="card  w-full  shadow-2xl bg-base-100 mt-0 pb-6">
+        <div className=" w-full rounded-tl-[40px] rounded-br-[40px] md:rounded-tl-[60px] md:rounded-br-[60px] hover:shadow-2xl hover:shadow-[#8ECDDD] shadow-2xl bg-base-100 mt-0 pb-8">
           <form className="card-body">
             <div className="form-control">
               <label className="label">
@@ -59,7 +59,7 @@ const Register = () => {
             <button
               className="btn btn-outline border-none bg-[#ff8080] hover:bg-[#f16c6c] text-white"
             >
-              <FcGoogle /> <span className="ml-2">Sign up with Google</span>{" "}
+              <FcGoogle className="text-2xl" /> <span className="ml-2">Sign up with Google</span>{" "}
             </button>
           </form>
           <p className="text-center">
