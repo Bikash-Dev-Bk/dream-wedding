@@ -44,9 +44,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: - C: `"12"`
 
-<i>Write your explanation here</i>
+<i>In this sum function with two parameters which is return the sum of these value. When sum function called up with 2 arguments, one of the argument is number which value is 1, and another one was string which value is '2'. So, we all know that sum of a number and a string return string . So that's why correct answer is 12</i>
 
 </p>
 </details>
@@ -70,9 +70,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: - A: `['🍕', '🍫', '🥑', '🍔']`
 
-<i>Write your explanation here</i>
+<i>Here, info.favoriteFood initially references the first element of the food array, which is "🍕". But, it's later reassigned to "🍝", which doesn't affect the food array. So, when we console.log(food), it remains unchanged and prints the original array ["🍕", "🍫", "🥑", "🍔"].</i>
 
 </p>
 </details>
@@ -95,9 +95,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: - B: `Hi there, undefined`
 
-<i>Write your explanation here</i>
+<i>Here, sayHi function expects an argument , but it's called without any arguments. When call sayHi() without providing argument, then it uses the default value of undefined for parameter name. So, the function returns "Hi there, undefined".</i>
 
 </p>
 </details>
@@ -123,9 +123,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: - C: 3
 
-<i>Write your explanation here</i>
+<i> Here, the forEach method iterates through the nums array and checks each element. When num is a truthy value , it increments the count variable. Since there are three truthy values in the array (1, 2, and 3), the count variable is incremented three times, so, final value is 3.</i>
 
 </p>
 </details>
