@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
@@ -6,6 +6,8 @@ import { AuthContext } from "../../providers/AuthProvider";
 const Register = () => {
   const { createUser, signInWithGoogle } = useContext(AuthContext);
 
+  const navigate = useNavigate();
+  
   const [passwordError, setPasswordError] = useState("");
   const [success, setSuccess] = useState(false);
 
@@ -42,6 +44,7 @@ const Register = () => {
         const user = result.user;
         form.reset();
         setSuccess(true);
+        navigate('/');
         console.log('register page',user);
       })
       .catch((error) => {
@@ -53,6 +56,7 @@ const Register = () => {
     signInWithGoogle()
       .then((result) => {
         const user = result.user;
+        navigate('/');
         console.log(user);
       })
       .catch((error) => console.error(error));
