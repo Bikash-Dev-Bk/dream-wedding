@@ -6,7 +6,7 @@ const Service = ({service}) => {
     const { name, image, price, short_description, id } = service;
 
     return (
-        <div className="bg-base-100  rounded-tl-[40px] rounded-br-[40px] md:rounded-tl-[60px] md:rounded-br-[60px] border-2 border-[#8ECDDD] p-6 hover:shadow-2xl hover:shadow-[#8ECDDD]">
+        <div className="bg-base-100  rounded-tl-[40px] rounded-br-[40px] md:rounded-tl-[60px] md:rounded-br-[60px] border-2 border-[#8ECDDD] p-6 hover:shadow-2xl hover:shadow-[#8ECDDD]"  data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <div>
                 <img src={image} alt="service img" className="rounded-tl-[40px] md:rounded-tl-[60px] " />
             </div>

@@ -3,15 +3,15 @@ import faq from '../../../assets/faq.jpg'
 const FAQ = () => {
   return (
     <div className="max-w-7xl mx-auto my-32 p-5 md:p-4 lg:p-2">
-      <h2 className="text-4xl font-bold text-center">
+      <h2 className="text-4xl font-bold text-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
         Frequently Asked Questions
       </h2>
-      <p className="max-w-4xl mx-auto text-center text-lg mt-5 mb-24 p-5 md:p-4 lg:p-2">If you can't find the answers you're looking for in our FAQs, please don't hesitate to reach out to our dedicated team. We're here to assist you and ensure your wedding event is everything you've envisioned. Your satisfaction is our priority, and we're excited to be part of your special day.</p>
+      <p className="max-w-4xl mx-auto text-center text-lg mt-5 mb-24 p-5 md:p-4 lg:p-2" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">If you can't find the answers you're looking for in our FAQs, please don't hesitate to reach out to our dedicated team. We're here to assist you and ensure your wedding event is everything you've envisioned. Your satisfaction is our priority, and we're excited to be part of your special day.</p>
       <div className='flex gap-6 flex-col lg:flex-row items-center'>
-        <div className='flex-1'>
+        <div className='flex-1' data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
           <img src={faq} alt="" className="rounded-tl-[60px] rounded-br-[60px] md:rounded-tl-[100px] md:rounded-br-[100px] border-4 border-[#8ECDDD] hover:shadow-2xl hover:shadow-[#8ECDDD]" />
         </div>
-        <div  className='flex-1'>
+        <div  className='flex-1' data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine">
           <div className="collapse collapse-plus bg-[#8ECDDD] mb-2">
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-xl font-medium">
