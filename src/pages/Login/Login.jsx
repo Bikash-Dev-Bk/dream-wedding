@@ -2,6 +2,9 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import toast, { Toaster } from "react-hot-toast";
+
+const loginToast = () => toast.success("Successfully login to the account!");
 
 const Login = () => {
   const { signIn, signInWithGoogle } = useContext(AuthContext);
@@ -29,7 +32,7 @@ const Login = () => {
         console.log(user);
         setSuccess(true);
         form.reset();
-        navigate(location?.state ? location.state : '/');
+        // navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.error(error);
@@ -41,7 +44,7 @@ const Login = () => {
     signInWithGoogle()
       .then((result) => {
         const user = result.user;
-        navigate(location?.state ? location.state : '/');
+        navigate(location?.state ? location.state : "/");
         console.log(user);
       })
       .catch((error) => console.error(error));
@@ -88,24 +91,22 @@ const Login = () => {
             </div>
 
             {success && (
-              <p className="text-green-500">
-                Successfully login to the account
-              </p>
+              <div className="text-green-500" onSubmit={loginToast()}></div>
             )}
 
-            {passwordError && (
-              <p className="text-red-500">Wrong password or email</p>
-            )}
+            {passwordError && <p className="text-red-500">{passwordError}</p>}
 
             <div className="form-control mt-6">
               <button className="btn rounded-full  text-white bg-[#ff8080] hover:bg-white hover:border-2 hover:border-[#ff8080] hover:text-[#ff8080]">
                 Login
               </button>
+              <Toaster position="top-center" reverseOrder={false} />
             </div>
             <p className="text-center font-semibold">Or</p>
             <button
               onClick={handleSignInWithGoogle}
-              className="btn btn-outline rounded-full border-2 border-[#ff8080]  hover:bg-[#ff8080] hover:text-white hover:border-none ">
+              className="btn btn-outline rounded-full border-2 border-[#ff8080]  hover:bg-[#ff8080] hover:text-white hover:border-none "
+            >
               <FcGoogle className="text-2xl" />{" "}
               <span className="ml-2">Sign up with Google</span>{" "}
             </button>
