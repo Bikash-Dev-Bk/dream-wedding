@@ -2,9 +2,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
-import toast, { Toaster } from "react-hot-toast";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const RegisterToast = () => toast.success("User Created Successfully!");
 
 const Register = () => {
   const { createUser, signInWithGoogle } = useContext(AuthContext);
@@ -44,6 +44,7 @@ const Register = () => {
 
     createUser(email, password)
       .then((result) => {
+        toast.success("User Created Successfully!");
         const user = result.user;
         form.reset();
         setSuccess(true);
@@ -67,6 +68,7 @@ const Register = () => {
 
   return (
     <div className="hero bg-base-200 pt-12 pb-32">
+      <ToastContainer position="top-center" />
       <div className="hero-content flex-col">
         <div className="text-center lg:text-left">
           <h1 className="text-3xl md:text-5xl font-bold mb-2">
@@ -113,15 +115,12 @@ const Register = () => {
             </div>
 
             <p className="text-rose-600">{passwordError}</p>
-            {success && (
-              <p className="text-green-500" onSubmit={RegisterToast()}></p>
-            )}
-
+            
             <div className="form-control mt-6">
               <button className="btn rounded-full  text-white bg-[#ff8080] hover:bg-white hover:border-2 hover:border-[#f16c6c] hover:text-[#f16c6c]">
                 Register
               </button>
-              <Toaster position="top-center" reverseOrder={false} />
+              
             </div>
             <p className="text-center font-semibold">Or</p>
             <button

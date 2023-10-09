@@ -2,9 +2,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
-import toast, { Toaster } from "react-hot-toast";
-
-const loginToast = () => toast.success("Successfully login to the account!");
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const { signIn, signInWithGoogle } = useContext(AuthContext);
@@ -14,6 +13,8 @@ const Login = () => {
 
   const [success, setSuccess] = useState(false);
   const [passwordError, setPasswordError] = useState("");
+
+  // const loginToast = () => toast.success("Successfully login to the account!");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -28,6 +29,7 @@ const Login = () => {
 
     signIn(email, password)
       .then((result) => {
+        toast.success("Successfully login to the account!");
         const user = result.user;
         console.log(user);
         setSuccess(true);
@@ -52,6 +54,7 @@ const Login = () => {
 
   return (
     <div className="hero bg-base-200 pt-12 pb-32">
+      <ToastContainer position="top-center" />
       <div className="hero-content flex-col">
         <div className="text-center lg:text-left">
           <h1 className="text-3xl md:text-5xl font-bold mb-2">
@@ -90,17 +93,12 @@ const Login = () => {
               </label>
             </div>
 
-            {success && (
-              <div className="text-green-500" onSubmit={loginToast()}></div>
-            )}
-
             {passwordError && <p className="text-red-500">{passwordError}</p>}
 
             <div className="form-control mt-6">
               <button className="btn rounded-full  text-white bg-[#ff8080] hover:bg-white hover:border-2 hover:border-[#ff8080] hover:text-[#ff8080]">
                 Login
               </button>
-              <Toaster position="top-center" reverseOrder={false} />
             </div>
             <p className="text-center font-semibold">Or</p>
             <button
