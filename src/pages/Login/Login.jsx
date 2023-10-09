@@ -14,8 +14,6 @@ const Login = () => {
   const [success, setSuccess] = useState(false);
   const [passwordError, setPasswordError] = useState("");
 
-  // const loginToast = () => toast.success("Successfully login to the account!");
-
   const handleSubmit = (event) => {
     event.preventDefault();
     setSuccess(false);
@@ -34,7 +32,10 @@ const Login = () => {
         console.log(user);
         setSuccess(true);
         form.reset();
-        // navigate(location?.state ? location.state : "/");
+        setTimeout(() => {
+          navigate(location?.state ? location.state : "/");
+        }, 2000);
+        
       })
       .catch((error) => {
         console.error(error);
@@ -45,8 +46,11 @@ const Login = () => {
   const handleSignInWithGoogle = () => {
     signInWithGoogle()
       .then((result) => {
+        toast.success("Successfully login to the account!");
         const user = result.user;
-        navigate(location?.state ? location.state : "/");
+        setTimeout(() => {
+          navigate(location?.state ? location.state : "/");
+        }, 2000);
         console.log(user);
       })
       .catch((error) => console.error(error));

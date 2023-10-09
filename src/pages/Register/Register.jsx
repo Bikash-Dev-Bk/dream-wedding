@@ -48,7 +48,9 @@ const Register = () => {
         const user = result.user;
         form.reset();
         setSuccess(true);
-        // navigate('/');
+        setTimeout(() => {
+          navigate('/');
+        }, 2000);
         console.log('register page',user);
       })
       .catch((error) => {
@@ -59,8 +61,11 @@ const Register = () => {
   const handleSignInWithGoogle = () => {
     signInWithGoogle()
       .then((result) => {
+        toast.success("User Created Successfully!");
         const user = result.user;
-        navigate('/');
+        setTimeout(() => {
+          navigate('/');
+        }, 2000);
         console.log(user);
       })
       .catch((error) => console.error(error));
