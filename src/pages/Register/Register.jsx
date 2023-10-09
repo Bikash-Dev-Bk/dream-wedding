@@ -2,6 +2,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import toast, { Toaster } from "react-hot-toast";
+
+const RegisterToast = () => toast.success("User Created Successfully!");
 
 const Register = () => {
   const { createUser, signInWithGoogle } = useContext(AuthContext);
@@ -44,7 +47,7 @@ const Register = () => {
         const user = result.user;
         form.reset();
         setSuccess(true);
-        navigate('/');
+        // navigate('/');
         console.log('register page',user);
       })
       .catch((error) => {
@@ -111,13 +114,14 @@ const Register = () => {
 
             <p className="text-rose-600">{passwordError}</p>
             {success && (
-              <p className="text-green-500">User Created Successfully.</p>
+              <p className="text-green-500" onSubmit={RegisterToast()}></p>
             )}
 
             <div className="form-control mt-6">
               <button className="btn rounded-full  text-white bg-[#ff8080] hover:bg-white hover:border-2 hover:border-[#f16c6c] hover:text-[#f16c6c]">
                 Register
               </button>
+              <Toaster position="top-center" reverseOrder={false} />
             </div>
             <p className="text-center font-semibold">Or</p>
             <button
